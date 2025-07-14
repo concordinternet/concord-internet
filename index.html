@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concord Internet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Concord Internet</div>
+    <nav>
+      <span>Home</span>
+      <span>Contact</span>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+  <div id="particles-js"></div>
+  <div class="hero-content-wrapper">
+    <div class="hero-text">
+      <h1 class="animate-text">Experience Speed, Simplicity & Support</h1>
+      <p class="animate-text">Ultra-fast fiber internet and TV for homes and businesses.</p>
+      <div class="cta-buttons">
+      <button>Get Started Today</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="hero.png" alt="Concord Internet Hero" />
+    </div>
+  </div>
+</section>
+
+<script>
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 60, density: { enable: true, value_area: 800 }},
+      color: { value: "#10b981" },
+      shape: { type: "circle" },
+      opacity: { value: 0.5 },
+      size: { value: 3 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#10b981",
+        opacity: 0.4,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 3,
+        direction: "none",
+        out_mode: "out"
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "repulse" },
+        onclick: { enable: true, mode: "push" }
+      },
+      modes: {
+        repulse: { distance: 100 },
+        push: { particles_nb: 4 }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="features-container">
+      <h2 class="features-title">Get more with Concord Internet Fiber Internet</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3>Largest network</h3>
+          <p>With speeds up to 5 Gigs, we have an option for everyone</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-ban"></i>
+            <span class="stop-text">STOP</span>
+          </div>
+          <h3>No data caps</h3>
+          <p>Unlimited data and no speed throttling</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+            <span class="dollar-sign">$</span>
+          </div>
+          <h3>Price Guarantee</h3>
+          <p>Lock in our best rates and rest easy</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-gift"></i>
+          </div>
+          <h3>Get Perks</h3>
+          <p>Tap into hundreds of exclusive deals for Concord Internet customers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .features-section {
+      background: #f0fdf4;
+      padding: 80px 20px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .features-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .features-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #059669;
+      margin-bottom: 60px;
+      line-height: 1.2;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature-card {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(5, 150, 105, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 30px rgba(5, 150, 105, 0.15);
+    }
+
+    .feature-icon {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      border: 3px solid #059669;
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    .feature-icon i {
+      font-size: 32px;
+      color: #059669;
+    }
+
+    .stop-text {
+      position: absolute;
+      font-size: 12px;
+      font-weight: bold;
+      color: #ff6b35;
+      background: #fff;
+      padding: 2px 4px;
+      border-radius: 4px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .dollar-sign {
+      position: absolute;
+      font-size: 24px;
+      font-weight: bold;
+      color: #059669;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .feature-card h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    .feature-card p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .features-title {
+        font-size: 2rem;
+      }
+      
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      
+      .feature-card {
+        padding: 30px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+  </style>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <h2>Service Categories</h2>
+    <div class="card-grid">
+      <div class="card"><i class="fas fa-wifi"></i><h3>Home Internet</h3><p>Reliable speeds for every screen.</p></div>
+      <div class="card"><i class="fas fa-network-wired"></i><h3>Business Solutions</h3><p>Customized plans for performance.</p></div>
+      <div class="card"><i class="fas fa-tv-retro"></i><h3>Cable TV</h3><p>Entertainment that never buffers.</p></div>
+    </div>
+  </section>
+
+  <!-- Highlight Features -->
+  <section class="highlight-features">
+    <div class="feature-container" style="display: flex; gap: 24px; justify-content: center;">
+      <div class="feature-item" style="flex: 1;">
+        <img src="4.jpeg" alt="Feature 1" class="feature-img">
+      </div>
+      <div class="feature-item" style="flex: 1;">
+        <img src="5.png" alt="Feature 2" class="feature-img">
+      </div>
+      <div class="feature-item" style="flex: 1;">
+        <img src="6.webp" alt="Feature 3" class="feature-img">
+      </div>
+    </div>
+    <style>
+      .feature-container {
+        max-width: 900px;
+        margin: 0 auto 32px auto;
+      }
+      .feature-img {
+        width: 100%;
+        max-width: 220px;
+        height: 160px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        background: #f8f8f8;
+      }
+      @media (max-width: 700px) {
+        .feature-container {
+          flex-direction: column;
+          gap: 16px;
+          align-items: center;
+        }
+        .feature-item {
+          width: 100%;
+          max-width: 320px;
+        }
+      }
+    </style>
+  </section>
+
+  <section class="disclaimer-section">
+  <div class="disclaimer-container">
+    <h2 class="disclaimer-title">Disclaimer</h2>
+    <p>
+      The information provided on this website is for general informational purposes only. 
+      <strong>Concord Internet</strong> makes no representations or warranties of any kind, express or implied, 
+      about the completeness, accuracy, reliability, suitability, or availability of the information, 
+      products, or services contained on this website.
+    </p>
+    <p>
+      Any reliance you place on such information is therefore strictly at your own risk.
+    </p>
+  </div>
+</section>
+
+
+  <!-- Benefits -->
+  <section id="benefits" class="section">
+    <h2>Featured Benefits</h2>
+    <div class="card-grid">
+      <div class="card"><i class="fas fa-plug-circle-bolt"></i><p>Free Installation</p></div>
+      <div class="card"><i class="fas fa-headset"></i><p>24/7 Local Support</p></div>
+      <div class="card"><i class="fas fa-shield-alt"></i><p>Zero Hidden Fees</p></div>
+      <div class="card"><i class="fas fa-wifi"></i><p>Wi-Fi Optimization</p></div>
+      <div class="card"><i class="fas fa-rocket"></i><p>High-Speed Fiber</p></div>
+    </div>
+  </section>
+
+  <!-- Setup Guide -->
+  <section id="setup" class="section">
+    <h2>Quick Setup Guide</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="1.png" alt="Choose Plan" class="setup-img" />
+        <h3>Choose Plan</h3>
+      </div>
+      <div class="card">
+        <img src="2.png" alt="Confirm Address" class="setup-img" />
+        <h3>Confirm Address</h3>
+      </div>
+      <div class="card">
+        <img src="3.png" alt="Install in 24Hrs" class="setup-img" />
+        <h3>Install in 24Hrs</h3>
+      </div>
+    </div>
+    <style>
+      .setup-img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 10px auto;
+      }
+    </style>
+  </section>
+
+ <section id="testimonials" class="section testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      <i class="fas fa-quote-left quote-icon"></i>
+      <p>"Concord Internet's service is top-notch. Fast internet, zero downtime, and great support."</p>
+      <div class="testimonial-user">
+        <img src="https://i.pravatar.cc/50?img=1" alt="User">
+        <div>
+          <strong>Samantha Ray</strong><br>
+          <span>San Diego, CA</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <i class="fas fa-quote-left quote-icon"></i>
+      <p>"Super easy installation and blazing speeds. Our whole office uses Concord Internet."</p>
+      <div class="testimonial-user">
+        <img src="https://i.pravatar.cc/50?img=2" alt="User">
+        <div>
+          <strong>Michael Zhou</strong><br>
+          <span>Austin, TX</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <i class="fas fa-quote-left quote-icon"></i>
+      <p>"Reliable service and no hidden fees—exactly what I needed for my home setup."</p>
+      <div class="testimonial-user">
+        <img src="https://i.pravatar.cc/50?img=3" alt="User">
+        <div>
+          <strong>Priya Verma</strong><br>
+          <span>Chicago, IL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <div class="faq-container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">What services does Concord Internet offer?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>Concord Internet provides a range of connectivity solutions including high-speed internet, cellular plans, bundled packages, and streaming services. We offer services from top providers, ensuring you have access to the best options for your home or business.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What companies are serviceable through Concord Internet?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>
+          Concord Internet offers services from leading companies, including:
+        </p>
+        <ul>
+          <li>Paramount+</li>
+          <li>SHOWTIME®</li>
+          <li>AT&amp;T</li>
+          <li>Verizon</li>
+          <li>Spectrum</li>
+          <li>Comcast Xfinity</li>
+          <li>Frontier</li>
+          <li>HughesNet</li>
+          <li>CenturyLink</li>
+          <li>...and many more.</li>
+        </ul>
+        <p>Through our partnerships, we ensure you have access to reliable and diverse service options.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Is Concord Internet a service provider?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>Concord Internet is an authorized dealer and certified retailer, but we are not a direct service provider. We work with leading service providers like those listed above to connect you to their offerings, ensuring you receive the best possible service.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What are Concord Internet's execution charges?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>Concord Internet charges for its execution services, which include setting up new connections, processing bill payments, plan upgrades, account cancellations, and other administrative tasks. These charges range from $49.99 to $199.99, depending on the service request, and are separate from the billing charges of the service providers you're signed up with.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Why are Concord Internet's execution charges separate from my service provider's billing?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>As a separate entity, Concord Internet handles the execution of your service requests independently. Our charges cover the work required to manage and complete requests like plan upgrades, new installations, or account changes. These execution fees are distinct from your provider's billing, which covers your actual internet, cellular, or streaming service.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I contact Concord Internet for support?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>You can reach out to our customer support team through the contact form on our website. Our team is available to assist you with any inquiries, service requests, or troubleshooting needs.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+    const icon = question.querySelector(".icon");
+
+    question.addEventListener("click", () => {
+      const isOpen = answer.classList.contains("open");
+
+      // Close all
+      document.querySelectorAll(".faq-answer").forEach((el) => {
+        el.classList.remove("open");
+      });
+      document.querySelectorAll(".faq-question .icon").forEach((i) => {
+        i.textContent = "+";
+      });
+
+      // Toggle current
+      if (!isOpen) {
+        answer.classList.add("open");
+        icon.textContent = "−";
+      } else {
+        answer.classList.remove("open");
+        icon.textContent = "+";
+      }
+    });
+  });
+</script>
+
+  <!-- Contact -->
+ <section class="contact-us-section" id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="contact-container">
+    <div class="contact-form-left">
+      <h3>Drop us a line!</h3>
+      <form class="contact-form">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email*" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="call-button">Send</button>
+      </form>
+    </div>
+
+    <div class="contact-info-right">
+      <h3>Questions & Comments</h3>
+      <p>
+        We understand that our customers have unique needs. Send us a message, and we'll get back to you soon. We're available around the clock.
+      </p>
+      <strong>Concord Internet Support</strong>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Concord Internet. All rights reserved.</p>
+  </footer>
+  <div class="footer-links">
+     <span>Home</span>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="refund.html">Refund Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+  </div>
+</body>
+</html>
