@@ -15,7 +15,7 @@
     <div class="logo">Concord Internet</div>
     <nav>
       <span>Home</span>
-      <span>Contact</span>
+      <span onclick="location.href='tel:+18889713119'">Contact </span>
     </nav>
   </header>
 
@@ -25,9 +25,9 @@
   <div class="hero-content-wrapper">
     <div class="hero-text">
       <h1 class="animate-text">Experience Speed, Simplicity & Support</h1>
-      <p class="animate-text">Ultra-fast fiber internet and TV for homes and businesses.</p>
+      <p class="animate-text">Ultra-fast fiber internet and TV for homes and businesses.+1(888) 971-3119</p>
       <div class="cta-buttons">
-      <button>Get Started Today</button>
+      <button onclick="location.href='tel:+18889713119'">Get Started Today</button>
       </div>
     </div>
     <div class="hero-image">
@@ -84,6 +84,7 @@
           </div>
           <h3>Largest network</h3>
           <p>With speeds up to 5 Gigs, we have an option for everyone</p>
+          <a href="tel:+18889713119" class="feature-cta">📞 Call +1(888) 971-3119</a>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -92,6 +93,7 @@
           </div>
           <h3>No data caps</h3>
           <p>Unlimited data and no speed throttling</p>
+          <a href="tel:+18889713119" class="feature-cta">📞 Call +1(888) 971-3119</a>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -100,6 +102,7 @@
           </div>
           <h3>Price Guarantee</h3>
           <p>Lock in our best rates and rest easy</p>
+          <a href="tel:+18889713119" class="feature-cta">📞 Call +1(888) 971-3119</a>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
@@ -107,6 +110,7 @@
           </div>
           <h3>Get Perks</h3>
           <p>Tap into hundreds of exclusive deals for Concord Internet customers</p>
+          <a href="tel:+18889713119" class="feature-cta">📞 Call +1(888) 971-3119</a>
         </div>
       </div>
     </div>
@@ -206,7 +210,23 @@
       font-size: 1rem;
       color: #666;
       line-height: 1.6;
-      margin: 0;
+      margin: 0 0 15px 0;
+    }
+
+    .feature-cta {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #059669;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .feature-cta:hover {
+      background: #047857;
     }
 
     @media (max-width: 768px) {
@@ -232,13 +252,80 @@
     }
   </style>
 
+  <style>
+    .cta-phone {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background: #10b981;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+
+    .cta-phone:hover {
+      background: #059669;
+    }
+
+    .contact-phone {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #059669;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .contact-phone:hover {
+      background: #047857;
+    }
+
+    .service-cta {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background: #059669;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .service-cta:hover {
+      background: #047857;
+    }
+  </style>
+
   <!-- Services -->
   <section id="services" class="section">
     <h2>Service Categories</h2>
     <div class="card-grid">
-      <div class="card"><i class="fas fa-wifi"></i><h3>Home Internet</h3><p>Reliable speeds for every screen.</p></div>
-      <div class="card"><i class="fas fa-network-wired"></i><h3>Business Solutions</h3><p>Customized plans for performance.</p></div>
-      <div class="card"><i class="fas fa-tv-retro"></i><h3>Cable TV</h3><p>Entertainment that never buffers.</p></div>
+      <div class="card">
+        <i class="fas fa-wifi"></i>
+        <h3>Home Internet</h3>
+        <p>Reliable speeds for every screen.</p>
+        <a href="tel:+18889713119" class="service-cta">📞 +1(888) 971-3119</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-network-wired"></i>
+        <h3>Business Solutions</h3>
+        <p>Customized plans for performance.</p>
+        <a href="tel:+18889713119" class="service-cta">📞 +1(888) 971-3119</a>
+      </div>
+      <div class="card">
+        <i class="fas fa-tv-retro"></i>
+        <h3>Cable TV</h3>
+        <p>Entertainment that never buffers.</p>
+        <a href="tel:+18889713119" class="service-cta">📞 +1(888) 971-3119</a>
+      </div>
     </div>
   </section>
 
@@ -486,6 +573,7 @@
         <input type="email" placeholder="Email*" required />
         <textarea placeholder="Message" required></textarea>
         <button type="submit" class="call-button">Send</button>
+        <a href="tel:+18889713119" class="contact-phone">📞 Call Us: +1(888) 971-3119</a>
       </form>
     </div>
 
@@ -495,6 +583,7 @@
         We understand that our customers have unique needs. Send us a message, and we'll get back to you soon. We're available around the clock.
       </p>
       <strong>Concord Internet Support</strong>
+      <p>📞 <a href="tel:+18889713119">+1(888) 971-3119</a></p>
     </div>
   </div>
 </section>
@@ -503,6 +592,7 @@
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Concord Internet. All rights reserved.</p>
+    <p>📞 Customer Support: <a href="tel:+18889713119" style="color: #10b981; text-decoration: none;">+1(888) 971-3119</a></p>
   </footer>
   <div class="footer-links">
      <span>Home</span>
