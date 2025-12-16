@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ – Concord Internet</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f0fdf4;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #fff;
+      padding: 24px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #059669;
+    }
+
+    nav a {
+      color: #059669;
+      margin: 0 16px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 6px 12px;
+      transition: background 0.2s;
+    }
+
+    nav a:hover {
+      background: #dcfce7;
+    }
+
+    .disclosure-banner {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 16px 48px;
+      text-align: center;
+    }
+
+    .disclosure-banner p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #78350f;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #059669;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: #fff;
+      border: none;
+      padding: 20px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #222;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+    }
+
+    .faq-question:hover {
+      background: #f0fdf4;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 20px;
+    }
+
+    .faq-answer.open {
+      max-height: 1000px;
+      padding: 20px;
+    }
+
+    .faq-answer p, .faq-answer ul {
+      margin: 10px 0;
+      color: #374151;
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      color: #059669;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #fff;
+      padding: 30px 40px;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 60px;
+    }
+
+    footer strong {
+      color: #059669;
+    }
+
+    .footer-links {
+      background-color: #f9fafb;
+      text-align: center;
+      padding: 15px 10px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .footer-links a {
+      color: #059669;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #047857;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Concord Internet</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Disclosure Banner -->
+  <div class="disclosure-banner">
+    <p><strong>Independent Service Notice:</strong> We are an independent third-party service assistance startup, launched in 2025, and are not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider.</p>
+  </div>
+
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <button class="faq-question">Are you an official cable or internet service provider?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>No. We are an independent third-party assistance platform. We do not provide cable, internet, or streaming services directly. Instead, we assist customers in understanding and navigating service options from various providers. We are not affiliated with any service provider.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you sell internet, cable, or streaming plans?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>No. We provide guidance and assistance only. We help educate you about available options in your area and facilitate your setup decisions, but we do not sell service plans. You will subscribe directly with your chosen provider, and they will bill you for their services.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you charge for your services?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>Yes. Our service fees are separate from provider charges. We charge for our assistance, guidance, and facilitation services. These fees cover our time in helping you understand options, navigate setup procedures, compare available services, and provide educational support throughout the process.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Will I still be billed by my service provider?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>Yes. Provider billing remains unchanged. When you subscribe to a service through your chosen provider, you will be billed directly by that provider for their services (internet, cable, streaming, etc.). Our fees are separate and cover only our assistance and guidance services.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you need my account passwords or sensitive information?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>No. We never request provider passwords, social security numbers, or sensitive account credentials. We provide guidance and support without needing access to your existing provider accounts. You maintain full control of your account security.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Which providers do you support?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>We may reference multiple providers for informational and guidance purposes only. This includes companies such as AT&T®, Verizon®, Spectrum®, Xfinity®, Frontier®, CenturyLink®, Cox®, and many others. We have no affiliation, partnership, or endorsement relationship with any of these providers. All trademarks and brand names belong to their respective owners.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Are your services refundable?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>Yes. Refund requests may be submitted within 7 to 15 days of service purchase, depending on the type of assistance provided and whether assistance has already been delivered. Eligibility is subject to the specific circumstances of your request. Please review our Refund Policy page for complete eligibility details and submission procedures.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What kind of assistance do you provide?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>We provide educational guidance on connectivity options, help you understand different service plans, facilitate communication between you and providers, assist with setup questions, and support you in making informed decisions about cable, internet, and streaming services. We act as an independent resource to help simplify the process.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How long does it take to get assistance?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>Response times vary depending on the type of assistance requested. For general questions and guidance, we typically respond within 24 hours. For setup assistance and facilitation services, timelines depend on provider availability and your specific situation. We strive to provide timely support for all requests.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I contact your support team?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>You can reach our assistance team by phone at +1 (888) 971-5824 or through our contact form on the website. When calling, you'll hear: "Thank you for calling Concord Internet, an independent service assistance platform." Our team is here to answer your questions and provide guidance.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Are you affiliated with any specific provider?<span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>No. We are completely independent and have no affiliation, endorsement, sponsorship, or partnership with any cable, internet, or streaming service provider. This independence allows us to provide unbiased guidance based on your specific needs rather than promoting any particular company.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach((item) => {
+      const question = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+      const icon = question.querySelector(".icon");
+
+      question.addEventListener("click", () => {
+        const isOpen = answer.classList.contains("open");
+
+        // Close all
+        document.querySelectorAll(".faq-answer").forEach((el) => {
+          el.classList.remove("open");
+        });
+        document.querySelectorAll(".faq-question .icon").forEach((i) => {
+          i.textContent = "+";
+        });
+
+        // Toggle current
+        if (!isOpen) {
+          answer.classList.add("open");
+          icon.textContent = "−";
+        } else {
+          answer.classList.remove("open");
+          icon.textContent = "+";
+        }
+      });
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Concord Internet</strong> is an independent third-party service assistance startup, launched in 2025. We are not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider.</p>
+    <p>All trademarks and brand names belong to their respective owners.</p>
+  </footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="refund.html">Refund Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+  </div>
+</body>
+</html>

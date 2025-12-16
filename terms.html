@@ -8,126 +8,353 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      line-height: 1.6;
+      background-color: #f0fdf4;
+      color: #222;
+      line-height: 1.7;
       padding: 40px 20px;
     }
 
+    header {
+      background: #fff;
+      padding: 24px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #059669;
+    }
+
+    nav a {
+      color: #059669;
+      margin: 0 16px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 6px 12px;
+      transition: background 0.2s;
+    }
+
+    nav a:hover {
+      background: #dcfce7;
+    }
+
     h1, h2 {
-      color: #ffffff;
+      color: #059669;
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       margin-bottom: 20px;
+      margin-top: 100px;
     }
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       margin-top: 30px;
-      margin-bottom: 10px;
-      border-left: 4px solid #10b981;
+      margin-bottom: 12px;
+      border-left: 4px solid #059669;
       padding-left: 12px;
     }
 
     ul {
-      padding-left: 20px;
+      padding-left: 24px;
+      color: #374151;
+    }
+
+    ul li {
+      margin-bottom: 12px;
     }
 
     .container {
       max-width: 960px;
       margin: auto;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #888;
-      border-top: 1px solid #333;
-      padding-top: 20px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
 
     p {
-      margin-bottom: 12px;
+      margin-bottom: 16px;
+      color: #374151;
     }
+
+    strong {
+      color: #059669;
+    }
+
+    .highlight-box {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 20px;
+      margin: 24px 0;
+      border-radius: 6px;
+    }
+
+    .highlight-box p {
+      margin: 8px 0;
+      color: #78350f;
+    }
+
     footer {
-  background-color: #20232a;
-  padding: 20px 40px;
-  text-align: center;
-  color: #bbbbbb;
-  font-size: 0.95rem;
-  border-top: 1px solid #2c2f36;
-}
+      background-color: #fff;
+      padding: 30px 40px;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 60px;
+    }
 
-.footer-links {
-  background-color: #181a1f;
-  text-align: center;
-  padding: 15px 10px;
-  border-top: 1px solid #2c2f36;
-}
+    footer strong {
+      color: #059669;
+    }
 
-.footer-links a {
-  color: #10b981;
-  text-decoration: none;
-  margin: 0 12px;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
-}
+    .footer-links {
+      background-color: #f9fafb;
+      text-align: center;
+      padding: 15px 10px;
+      border-top: 1px solid #e5e7eb;
+    }
 
-.footer-links a:hover {
-  color: #059669;
-}
+    .footer-links a {
+      color: #059669;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
 
+    .footer-links a:hover {
+      color: #047857;
+    }
   </style>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Concord Internet</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <div class="container">
     <h1>Terms & Conditions</h1>
 
-    <p>These Terms & Conditions govern your use of the Concord Internet website and services. By accessing our site or utilizing our services, you agree to comply with these terms in full.</p>
+    <div class="highlight-box">
+      <p><strong>Important Disclosure:</strong> Concord Internet is an independent third-party service assistance startup, launched in 2025. We are not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider. We do not provide internet, cable, or streaming services. We charge a separate service fee for our assistance and guidance.</p>
+    </div>
 
-    <h2>Service Agreement</h2>
-    <p>Concord Internet operates as a third-party distributor and service facilitator for various internet, cellular, and communication providers. All services are subject to the respective terms and conditions of the service provider, and Concord Internet acts as an intermediary between the customer and provider. Concord Internet does not guarantee service uptime, performance, or features, as these are dependent on the third-party provider.</p>
+    <p>These Terms & Conditions govern your use of the Concord Internet website and assistance services. By accessing our website or utilizing our services, you agree to comply with these terms in full. Please read them carefully.</p>
 
-    <h2>User Responsibilities</h2>
+    <h2>1. Nature of Services</h2>
+    <p>
+      Concord Internet operates as an <strong>independent third-party assistance platform</strong>. We provide:
+    </p>
     <ul>
-      <li><strong>Provide Accurate Information:</strong> Ensure that all information you provide during the service inquiry or purchase process is accurate and up-to-date.</li>
-      <li><strong>Comply with Provider Terms:</strong> Adhere to the terms and conditions of the specific service provider whose services you are purchasing through Concord Internet.</li>
-      <li><strong>Account Security:</strong> Maintain the confidentiality of your account login details and notify us immediately of any unauthorized access to your account.</li>
-      <li><strong>Contact Us:</strong> For any questions or support, please contact us through our website.</li>
+      <li>Educational guidance on cable, internet, and streaming services</li>
+      <li>Assistance in understanding connectivity options</li>
+      <li>Support in navigating service provider choices</li>
+      <li>Facilitation of communication with service providers</li>
+      <li>General informational support</li>
+    </ul>
+    <p>
+      <strong>We do not:</strong>
+    </p>
+    <ul>
+      <li>Provide internet, cable, or streaming services directly</li>
+      <li>Sell service plans</li>
+      <li>Act as an agent of any service provider</li>
+      <li>Have any affiliation with service providers</li>
     </ul>
 
-    <h2>Payments and Fees</h2>
-    <p>All payments for services facilitated by Concord Internet are processed according to the terms set forth by the respective service providers. Service fees charged by Concord Internet for installation, activation, or any other service-related execution are separate and non-refundable once the service has been rendered.</p>
+    <h2>2. Independent Platform</h2>
+    <p>
+      Concord Internet is completely independent from all internet service providers, cable companies, streaming platforms, and telecommunications providers. We have no partnerships, endorsements, sponsorships, or official relationships with any providers, including but not limited to AT&T®, Verizon®, Spectrum®, Xfinity®, Frontier®, Cox®, CenturyLink®, or any others.
+    </p>
+    <p>
+      All trademarks and brand names belong to their respective owners and are referenced for informational purposes only.
+    </p>
 
-    <h2>Service Termination</h2>
-    <p>Concord Internet reserves the right to terminate or suspend your access to services if you violate these Terms & Conditions or the terms of the respective service provider. In such cases, any fees paid may not be refundable.</p>
+    <h2>3. Service Fees</h2>
+    <p>
+      Concord Internet charges <strong>separate service fees</strong> for our assistance and guidance services. These fees are:
+    </p>
+    <ul>
+      <li>Distinct from charges by actual service providers</li>
+      <li>For our time and expertise in providing guidance</li>
+      <li>Clearly disclosed before services are rendered</li>
+      <li>Subject to the refund policy (7-15 days, terms apply)</li>
+    </ul>
+    <p>
+      You will continue to be billed directly by any service provider you choose for their services (internet, cable, streaming, etc.). We have no control over provider pricing or billing.
+    </p>
 
-    <h2>Limitation of Liability</h2>
-    <p>Concord Internet is not liable for any direct, indirect, or incidental damages that arise from the use or inability to use the services facilitated through our platform. Our liability is limited to the service fees paid directly to Concord Internet, excluding third-party provider fees.</p>
+    <h2>4. User Responsibilities</h2>
+    <p>By using our services, you agree to:</p>
+    <ul>
+      <li><strong>Provide Accurate Information:</strong> Submit truthful and current information during all interactions</li>
+      <li><strong>Verify Provider Information:</strong> Confirm all details directly with service providers before committing</li>
+      <li><strong>Read Provider Contracts:</strong> Review and understand terms from any service provider you choose</li>
+      <li><strong>Manage Provider Accounts:</strong> Handle your own provider account security and credentials</li>
+      <li><strong>Respect Our Assistance Role:</strong> Understand we provide guidance, not direct services</li>
+      <li><strong>Use Services Legally:</strong> Comply with all applicable laws and regulations</li>
+    </ul>
 
-    <h2>Governing Law</h2>
-    <p>These Terms & Conditions are governed by the laws of the USA, and any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts in Texas.</p>
+    <h2>5. No Provider Credentials</h2>
+    <p>
+      We <strong>never</strong> request:
+    </p>
+    <ul>
+      <li>Service provider account passwords</li>
+      <li>Social security numbers (unless required for identity verification)</li>
+      <li>Credit card CVV codes</li>
+      <li>Provider login credentials</li>
+    </ul>
+    <p>
+      You maintain full control of all your service provider accounts.
+    </p>
 
-    <h2>Changes to Terms</h2>
-    <p>Concord Internet reserves the right to update or modify these Terms & Conditions at any time. Users will be notified of any significant changes, and continued use of our services constitutes acceptance of the updated terms.</p>
+    <h2>6. No Guarantees of Provider Services</h2>
+    <p>
+      Because we are not the service provider, Concord Internet makes <strong>no guarantees</strong> regarding:
+    </p>
+    <ul>
+      <li>Internet speeds, reliability, or uptime</li>
+      <li>Cable TV quality or channel availability</li>
+      <li>Streaming service performance</li>
+      <li>Installation timelines</li>
+      <li>Provider customer service quality</li>
+      <li>Provider pricing, promotions, or contract terms</li>
+      <li>Service availability in specific areas</li>
+    </ul>
+    <p>
+      All service quality and performance are the responsibility of the respective service provider.
+    </p>
 
-    <div class="footer">
-      &copy; 2025 Concord Internet. All rights reserved.
-    </div>
+    <h2>7. Limitation of Liability</h2>
+    <p>
+      Concord Internet shall not be liable for:
+    </p>
+    <ul>
+      <li>Service provider performance or non-performance</li>
+      <li>Installation delays, cancellations, or issues</li>
+      <li>Service outages or technical problems from providers</li>
+      <li>Provider billing disputes or errors</li>
+      <li>Changes in provider pricing or availability</li>
+      <li>Provider contract terms or conditions</li>
+      <li>Any direct, indirect, incidental, or consequential damages arising from provider services</li>
+    </ul>
+    <p>
+      Our liability is limited to the assistance fees paid to Concord Internet and does not extend to any provider charges or related issues.
+    </p>
+
+    <h2>8. Information Accuracy</h2>
+    <p>
+      We strive to provide accurate information, but:
+    </p>
+    <ul>
+      <li>Provider details may change without notice</li>
+      <li>Service availability varies by location</li>
+      <li>Pricing and promotions are subject to provider discretion</li>
+      <li>Information is for educational purposes</li>
+    </ul>
+    <p>
+      Always verify all details directly with the service provider before making commitments.
+    </p>
+
+    <h2>9. Refund Policy</h2>
+    <p>
+      Refund requests may be submitted within 7 to 15 days of service purchase, depending on the type of assistance provided and whether assistance has been delivered. See our <a href="refund.html" style="color: #059669; font-weight: 600;">Refund Policy</a> for complete details.
+    </p>
+    <p>
+      <strong>Important:</strong> Our refund policy applies only to fees charged by Concord Internet, not to charges from service providers.
+    </p>
+
+    <h2>10. Privacy</h2>
+    <p>
+      Your use of our services is also governed by our <a href="privacy.html" style="color: #059669; font-weight: 600;">Privacy Policy</a>. We are committed to protecting your personal information and using it only for assistance purposes.
+    </p>
+
+    <h2>11. Intellectual Property</h2>
+    <p>
+      All content on this website, including text, graphics, logos, and design, is the property of Concord Internet and protected by copyright laws. You may not reproduce, distribute, or create derivative works without written permission.
+    </p>
+    <p>
+      Third-party trademarks mentioned belong to their respective owners.
+    </p>
+
+    <h2>12. Modifications to Terms</h2>
+    <p>
+      Concord Internet reserves the right to modify these Terms & Conditions at any time. Changes will be posted on this page with an updated effective date. Your continued use of our services after changes constitutes acceptance of the updated terms.
+    </p>
+
+    <h2>13. Service Termination</h2>
+    <p>
+      We reserve the right to terminate or suspend access to our services if you:
+    </p>
+    <ul>
+      <li>Violate these Terms & Conditions</li>
+      <li>Provide false or misleading information</li>
+      <li>Engage in fraudulent activity</li>
+      <li>Misuse our assistance services</li>
+    </ul>
+
+    <h2>14. Third-Party Links</h2>
+    <p>
+      Our website may contain links to third-party websites (including service provider sites). We have no control over and assume no responsibility for the content, privacy policies, or practices of these external sites.
+    </p>
+
+    <h2>15. Governing Law</h2>
+    <p>
+      These Terms & Conditions are governed by the laws of the United States and the State of Texas. Any disputes arising from these terms shall be subject to the jurisdiction of courts in Texas.
+    </p>
+
+    <h2>16. Entire Agreement</h2>
+    <p>
+      These Terms & Conditions, together with our Privacy Policy, Refund Policy, and Disclaimer, constitute the entire agreement between you and Concord Internet regarding the use of our services.
+    </p>
+
+    <h2>17. Contact Information</h2>
+    <p>
+      For questions about these Terms & Conditions, please contact us:
+    </p>
+    <p>
+      <strong>Phone:</strong> <a href="tel:+18889715824" style="color: #059669; font-weight: 600;">+1 (888) 971-5824</a><br>
+      <strong>Greeting:</strong> <em>"Thank you for calling Concord Internet, an independent service assistance platform."</em>
+    </p>
+
+    <p style="margin-top: 40px; font-size: 0.9rem; color: #6b7280;">
+      <strong>Effective Date:</strong> December 16, 2025
+    </p>
   </div>
-     <!-- Footer -->
- 
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Concord Internet</strong> is an independent third-party service assistance startup, launched in 2025. We are not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider.</p>
+    <p>All trademarks and brand names belong to their respective owners.</p>
+  </footer>
   <div class="footer-links">
-     <span>Home</span>
-      <span>Privacy Policy</span>
-      <span>Refund Policy</span>
-      <span>Terms & Conditions</span>
-    </div>
+    <a href="index.html">Home</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="refund.html">Refund Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
   </div>
-
-
 </body>
 </html>

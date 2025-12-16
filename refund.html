@@ -8,114 +8,281 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      line-height: 1.6;
+      background-color: #f0fdf4;
+      color: #222;
+      line-height: 1.7;
       padding: 40px 20px;
     }
 
+    header {
+      background: #fff;
+      padding: 24px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #059669;
+    }
+
+    nav a {
+      color: #059669;
+      margin: 0 16px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 6px 12px;
+      transition: background 0.2s;
+    }
+
+    nav a:hover {
+      background: #dcfce7;
+    }
+
     h1, h2 {
-      color: #ffffff;
+      color: #059669;
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       margin-bottom: 20px;
+      margin-top: 100px;
     }
 
     h2 {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       margin-top: 30px;
-      margin-bottom: 10px;
-      border-left: 4px solid #10b981;
+      margin-bottom: 12px;
+      border-left: 4px solid #059669;
       padding-left: 12px;
     }
 
     ul {
-      padding-left: 20px;
+      padding-left: 24px;
+      color: #374151;
+    }
+
+    ul li {
+      margin-bottom: 12px;
     }
 
     .container {
       max-width: 960px;
       margin: auto;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #888;
-      border-top: 1px solid #333;
-      padding-top: 20px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
 
     p {
-      margin-bottom: 12px;
+      margin-bottom: 16px;
+      color: #374151;
     }
+
+    strong {
+      color: #059669;
+    }
+
+    .highlight-box {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 20px;
+      margin: 24px 0;
+      border-radius: 6px;
+    }
+
+    .highlight-box p {
+      margin: 8px 0;
+      color: #78350f;
+    }
+
     footer {
-  background-color: #20232a;
-  padding: 20px 40px;
-  text-align: center;
-  color: #bbbbbb;
-  font-size: 0.95rem;
-  border-top: 1px solid #2c2f36;
-}
+      background-color: #fff;
+      padding: 30px 40px;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 60px;
+    }
 
-.footer-links {
-  background-color: #181a1f;
-  text-align: center;
-  padding: 15px 10px;
-  border-top: 1px solid #2c2f36;
-}
+    footer strong {
+      color: #059669;
+    }
 
-.footer-links a {
-  color: #10b981;
-  text-decoration: none;
-  margin: 0 12px;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
-}
+    .footer-links {
+      background-color: #f9fafb;
+      text-align: center;
+      padding: 15px 10px;
+      border-top: 1px solid #e5e7eb;
+    }
 
-.footer-links a:hover {
-  color: #059669;
-}
+    .footer-links a {
+      color: #059669;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
 
+    .footer-links a:hover {
+      color: #047857;
+    }
   </style>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Concord Internet</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <div class="container">
     <h1>Refund Policy</h1>
 
-    <p>Concord Internet strives to ensure the satisfaction of our customers. However, as a distributor of third-party services, our refund policies are aligned with the policies of the service providers we represent. Refunds may be issued under the following circumstances:</p>
-
-    <h2>1. Refund Eligibility</h2>
-    <ul>
-      <li><strong>Cancellation Before Installation:</strong> If you cancel your service request before the service installation, you may be eligible for a full refund of any upfront payments made to Concord Internet.</li>
-      <li><strong>Service Issues:</strong> If there is a verifiable issue with the service installation or activation that is directly attributable to Concord Internet, we will work to rectify the issue or, in rare cases, process a refund.</li>
-      <li><strong>Non-Refundable Items:</strong> Fees associated with the processing of services, including installation charges, activation fees, and administrative costs, are non-refundable.</li>
-    </ul>
-
-    <h2>2. Refund Request Process</h2>
-    <ul>
-      <li><strong>Submit a Request:</strong> Contact our customer service team through our website contact form within 14 days of the service issue to initiate a refund request.</li>
-      <li><strong>Provide Documentation:</strong> You may be required to provide documentation or information regarding the service issue.</li>
-      <li><strong>Refund Timelines:</strong> Approved refunds will be processed within 7-14 business days, depending on your payment method and financial institution.</li>
-    </ul>
-
-    <div class="footer">
-      &copy; 2025 Concord Internet. All rights reserved.
+    <div class="highlight-box">
+      <p><strong>Important Notice:</strong> Concord Internet is an independent third-party service assistance startup, launched in 2025. We are not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider. This refund policy applies only to fees charged by Concord Internet for our assistance services.</p>
     </div>
+
+    <p>At Concord Internet, we are committed to providing quality assistance and guidance. We understand that circumstances may arise where a refund is appropriate. This policy outlines the terms and conditions under which refunds for our assistance services may be requested.</p>
+
+    <h2>1. Refund Window</h2>
+    <p>
+      Refund requests can be submitted within <strong>7 to 15 days</strong> of service purchase, depending on the type of assistance provided. The specific refund window applicable to your situation will be determined by:
+    </p>
+    <ul>
+      <li>The nature of the assistance service purchased</li>
+      <li>Whether assistance has already been delivered</li>
+      <li>The complexity of the guidance provided</li>
+      <li>Whether facilitation with providers has been completed</li>
+    </ul>
+
+    <h2>2. Refund Eligibility</h2>
+    <p>Refunds for our assistance fees may be approved under the following circumstances:</p>
+    <ul>
+      <li><strong>Service Not Rendered:</strong> If Concord Internet has not yet provided the assistance services you purchased, you may be eligible for a full refund.</li>
+      <li><strong>Service Not As Described:</strong> If the assistance service you received differs significantly from what was described at the time of purchase.</li>
+      <li><strong>Duplicate Charges:</strong> If you were inadvertently charged multiple times for the same assistance service.</li>
+      <li><strong>Technical Issues:</strong> If technical problems on our end prevented us from delivering the promised assistance.</li>
+    </ul>
+
+    <h2>3. Non-Refundable Circumstances</h2>
+    <p>Refunds will generally <strong>not</strong> be issued in the following situations:</p>
+    <ul>
+      <li>Assistance has been fully delivered and completed</li>
+      <li>Customer dissatisfaction with third-party service provider performance (we are not responsible for provider services)</li>
+      <li>Change of mind after assistance has been provided</li>
+      <li>Requests submitted after the applicable refund window (7-15 days) has expired</li>
+      <li>Provider installation delays or cancellations (contact the provider directly)</li>
+      <li>Issues with service quality from actual internet, cable, or streaming providers</li>
+    </ul>
+
+    <h2>4. Provider Charges Are Separate</h2>
+    <p>
+      <strong>Critical Information:</strong> Our refund policy applies <strong>only to fees charged by Concord Internet</strong> for our assistance and guidance services. 
+    </p>
+    <p>
+      We have <strong>no control over</strong> and are <strong>not responsible for</strong>:
+    </p>
+    <ul>
+      <li>Charges from internet service providers</li>
+      <li>Charges from cable or TV providers</li>
+      <li>Charges from streaming services</li>
+      <li>Installation fees charged by providers</li>
+      <li>Equipment costs from providers</li>
+      <li>Monthly service fees from providers</li>
+    </ul>
+    <p>
+      For refunds related to provider charges, you must contact the respective service provider directly. We cannot process refunds for services we do not provide.
+    </p>
+
+    <h2>5. How to Request a Refund</h2>
+    <p>To submit a refund request for our assistance fees, please follow these steps:</p>
+    <ul>
+      <li><strong>Contact Us:</strong> Call +1 (888) 971-5824 or use our contact form</li>
+      <li><strong>Provide Information:</strong> Include your name, contact information, date of service purchase, and reason for refund request</li>
+      <li><strong>Submit Within Window:</strong> Ensure your request is submitted within 7-15 days of purchase</li>
+      <li><strong>Await Review:</strong> Our team will review your request and respond within 3-5 business days</li>
+    </ul>
+
+    <h2>6. Refund Review Process</h2>
+    <p>
+      Once we receive your refund request, our team will:
+    </p>
+    <ul>
+      <li>Review the details of your assistance service purchase</li>
+      <li>Verify whether services have been delivered</li>
+      <li>Assess eligibility based on this policy</li>
+      <li>Communicate our decision within 3-5 business days</li>
+    </ul>
+
+    <h2>7. Refund Processing Time</h2>
+    <p>
+      If your refund request is approved:
+    </p>
+    <ul>
+      <li>Refunds will be processed to the original payment method</li>
+      <li>Processing typically takes 7-10 business days</li>
+      <li>Depending on your financial institution, it may take an additional 3-5 business days for the refund to appear in your account</li>
+      <li>You will receive email confirmation once the refund is processed</li>
+    </ul>
+
+    <h2>8. Partial Refunds</h2>
+    <p>
+      In some cases, a partial refund may be offered if:
+    </p>
+    <ul>
+      <li>Some but not all assistance services have been delivered</li>
+      <li>Significant guidance has already been provided</li>
+      <li>Facilitation efforts have been partially completed</li>
+    </ul>
+
+    <h2>9. Questions About Refunds</h2>
+    <p>
+      If you have questions about our refund policy or wish to discuss a specific situation, please contact us:
+    </p>
+    <p>
+      <strong>Phone:</strong> <a href="tel:+18889715824" style="color: #059669; font-weight: 600;">+1 (888) 971-5824</a><br>
+      <strong>Greeting:</strong> <em>"Thank you for calling Concord Internet, an independent service assistance platform."</em>
+    </p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>
+      We reserve the right to modify this Refund Policy at any time. Changes will be posted on this page with an updated effective date. Your continued use of our services after changes constitutes acceptance of the updated policy.
+    </p>
+
+    <p style="margin-top: 40px; font-size: 0.9rem; color: #6b7280;">
+      <strong>Last Updated:</strong> December 16, 2025
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Concord Internet</strong> is an independent third-party service assistance startup, launched in 2025. We are not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider.</p>
+    <p>All trademarks and brand names belong to their respective owners.</p>
+  </footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="refund.html">Refund Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
   </div>
 </body>
-   <!-- Footer -->
-  
-  <div class="footer-links">
-     <span>Home</span>
-      <span>Privacy Policy</span>
-      <span>Refund Policy</span>
-      <span>Terms & Conditions</span>
-    </div>
-  </div>
-
-
 </html>

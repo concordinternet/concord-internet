@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Concord Internet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f0fdf4;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #fff;
+      padding: 24px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #059669;
+    }
+
+    nav a {
+      color: #059669;
+      margin: 0 16px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 6px 12px;
+      transition: background 0.2s;
+    }
+
+    nav a:hover {
+      background: #dcfce7;
+    }
+
+    .disclosure-banner {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 16px 48px;
+      text-align: center;
+    }
+
+    .disclosure-banner p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #78350f;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #059669;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .contact-info {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+
+    .contact-info h2 {
+      color: #059669;
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    .contact-info p {
+      color: #374151;
+      margin-bottom: 16px;
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      padding: 16px;
+      background: #f0fdf4;
+      border-radius: 8px;
+    }
+
+    .contact-method i {
+      font-size: 24px;
+      color: #059669;
+      margin-right: 16px;
+    }
+
+    .contact-method a {
+      color: #059669;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .contact-method a:hover {
+      color: #047857;
+    }
+
+    .contact-form-section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+
+    .contact-form-section h2 {
+      color: #059669;
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: #059669;
+    }
+
+    .contact-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      background: #059669;
+      color: #fff;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #047857;
+    }
+
+    .notice-box {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 20px;
+      margin: 30px 0;
+      border-radius: 6px;
+    }
+
+    .notice-box p {
+      margin: 8px 0;
+      color: #78350f;
+    }
+
+    footer {
+      background-color: #fff;
+      padding: 30px 40px;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e7eb;
+      margin-top: 60px;
+    }
+
+    footer strong {
+      color: #059669;
+    }
+
+    .footer-links {
+      background-color: #f9fafb;
+      text-align: center;
+      padding: 15px 10px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .footer-links a {
+      color: #059669;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #047857;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Concord Internet</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Disclosure Banner -->
+  <div class="disclosure-banner">
+    <p><strong>Independent Service Notice:</strong> We are an independent third-party service assistance startup, launched in 2025, and are not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider.</p>
+  </div>
+
+  <div class="container">
+    <h1>Contact Our Assistance Team</h1>
+
+    <div class="notice-box">
+      <p><strong>Important:</strong> We are an independent assistance platform. We do not provide cable, internet, or streaming services directly. We charge a separate service fee for our guidance and support.</p>
+      <p>When you call, you'll hear: <em>"Thank you for calling Concord Internet, an independent service assistance platform."</em></p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>We're here to help guide you through your connectivity options. Reach out to our assistance team for support with understanding service plans, setup guidance, and educational resources.</p>
+        
+        <div class="contact-method">
+          <i class="fas fa-phone"></i>
+          <div>
+            <strong>Phone Assistance</strong><br>
+            <a href="tel:+18889715824">+1 (888) 971-5824</a>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <i class="fas fa-clock"></i>
+          <div>
+            <strong>Response Time</strong><br>
+            Typically within 24 hours
+          </div>
+        </div>
+
+        <h3 style="color: #059669; margin-top: 30px;">What We Can Help With:</h3>
+        <ul style="color: #374151;">
+          <li>Understanding connectivity options</li>
+          <li>Navigating provider choices</li>
+          <li>Setup guidance and facilitation</li>
+          <li>Questions about our assistance fees</li>
+          <li>General educational support</li>
+        </ul>
+
+        <h3 style="color: #059669; margin-top: 20px;">What We Cannot Help With:</h3>
+        <ul style="color: #374151;">
+          <li>Provider technical support (contact your provider directly)</li>
+          <li>Provider billing issues (contact your provider directly)</li>
+          <li>Service outages (contact your provider directly)</li>
+        </ul>
+      </div>
+
+      <div class="contact-form-section">
+        <h2>Send Us a Message</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name*" required />
+          <input type="email" placeholder="Your Email*" required />
+          <input type="tel" placeholder="Phone Number (Optional)" />
+          <select style="width: 100%; padding: 12px; margin-bottom: 16px; border: 1px solid #d1d5db; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 1rem;">
+            <option>How can we assist you?</option>
+            <option>General Inquiry</option>
+            <option>Setup Guidance</option>
+            <option>Service Fee Question</option>
+            <option>Refund Request</option>
+            <option>Other</option>
+          </select>
+          <textarea placeholder="Your Message*" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <p style="font-size: 0.9rem; color: #6b7280; margin-top: 16px;">
+          <strong>Privacy Notice:</strong> We never request provider passwords or sensitive account credentials. Your information is used solely for assistance purposes.
+        </p>
+      </div>
+    </div>
+
+    <div class="notice-box" style="margin-top: 40px;">
+      <p><strong>Refund Policy:</strong> Refund requests may be submitted within 7 to 15 days of service purchase, depending on the type of assistance provided. See our <a href="refund.html" style="color: #059669; font-weight: 600;">Refund Policy</a> for details.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Concord Internet</strong> is an independent third-party service assistance startup, launched in 2025. We are not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider.</p>
+    <p>All trademarks and brand names belong to their respective owners. We charge a separate service fee for our assistance and guidance.</p>
+  </footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="refund.html">Refund Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+  </div>
+</body>
+</html>

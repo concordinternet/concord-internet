@@ -5,6 +5,41 @@ body {
   color: #222;
 }
 
+/* Disclosure Banner */
+.disclosure-banner {
+  background: #fef3c7;
+  border-bottom: 3px solid #f59e0b;
+  padding: 16px 48px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.disclosure-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.disclosure-content i {
+  font-size: 24px;
+  color: #f59e0b;
+}
+
+.disclosure-banner p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #78350f;
+  line-height: 1.5;
+}
+
+.disclosure-banner strong {
+  font-weight: 700;
+  color: #92400e;
+}
+
 header {
   background: #fff;
   padding: 24px 48px;
@@ -12,6 +47,13 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #059669;
+  cursor: pointer;
 }
 
 nav a {
@@ -93,13 +135,38 @@ nav span:hover {
   margin-left: 40px;
 }
 
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .cta-buttons button {
   background: #059669;
   color: #fff;
   border: none;
   padding: 13px 28px;
-  margin-right: 12px;
   font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-buttons button:hover {
+  background: #047857;
+}
+
+.cta-buttons .secondary-btn {
+  background: transparent;
+  color: #059669;
+  border: 2px solid #059669;
+}
+
+.cta-buttons .secondary-btn:hover {
+  background: #059669;
+  color: #fff;
+}
   font-size: 1rem;
   border-radius: 10px;
   cursor: pointer;
