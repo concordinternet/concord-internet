@@ -139,6 +139,37 @@
     .footer-links a:hover {
       color: #047857;
     }
+
+    /* Sticky Call Now Button */
+    .sticky-call-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #059669;
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+      z-index: 1000;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .sticky-call-button:hover {
+      background-color: #047857;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .sticky-call-button {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 18px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -305,5 +336,8 @@
     <a href="refund.html">Refund Policy</a>
     <a href="terms.html">Terms & Conditions</a>
   </div>
+
+  <!-- Sticky Call Now Button -->
+  <a href="tel:+18556835858" class="sticky-call-button">📞 Call Now (855) 683-5858</a>
 </body>
 </html>
